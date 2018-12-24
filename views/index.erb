@@ -3,13 +3,14 @@
     <title>Caesar Cipher</title>
     </head>
     <body>
+    <p>Enter a phrase to be ciphered and its shifts</p>
     <form>
         <input type='text' name ='phrase'>
-        <input type ='number' name='shift'>
+        <input type ='number' name='shift' min=1 value=1>
         <input type='submit' value='Cipher!'>
     </form>
     <% if !cipher.empty? %>
-        <p> Your cipher is <%=cipher%></p>
+        <p> Your cipher is <b><%=cipher%></b></p>
     <% end %>
     </body>
 </html>
