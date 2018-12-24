@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'sinatra/reloader'
 
-get '/cipher' do
+get '/' do
     phrase = params['phrase']
     shift = params['shift'].to_i
     cipher = caesar_cipher(phrase,shift)
